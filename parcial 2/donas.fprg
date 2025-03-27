@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="donas"/>
+        <attribute name="authors" value="maggi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 08:39:06 p. m."/>
+        <attribute name="created" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDMtMjY7MDc6MjA6MjEgcC4gbS47MzA3NQ=="/>
+        <attribute name="edited" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDMtMjY7MDg6Mzk6MDYgcC4gbS47MTszMTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precio" type="Integer" array="False" size=""/>
+            <assign variable="precio" expression="10"/>
+            <declare name="donas" type="Integer" array="False" size=""/>
+            <assign variable="donas" expression="0"/>
+            <input variable="donas"/>
+            <if expression="donas&gt;=30">
+                <then>
+                    <if expression="donas&gt;=50">
+                        <then>
+                            <output expression="(precio*donas)-donas*2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="(precio*donas)-donas*1" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="donas*precio" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
