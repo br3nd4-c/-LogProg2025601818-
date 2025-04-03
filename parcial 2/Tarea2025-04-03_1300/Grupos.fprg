@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Grupos"/>
+        <attribute name="authors" value="maggi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 01:05:38 a. m."/>
+        <attribute name="created" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDQtMDM7MTI6NDc6MDggYS4gbS47MzA2Ng=="/>
+        <attribute name="edited" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDQtMDM7MDE6MDU6MzggYS4gbS47MTszMTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Inicial" type="String" array="False" size=""/>
+            <declare name="Sexo" type="String" array="False" size=""/>
+            <output expression="&quot;Cual es la inicial de tu nombre?&quot;" newline="True"/>
+            <input variable="Inicial"/>
+            <output expression="&quot;Muy bien &#191;Eres mujer u hombre?&quot;" newline="True"/>
+            <input variable="Sexo"/>
+            <if expression="Sexo=&quot;mujer&quot;">
+                <then>
+                    <if expression="Inicial&gt;=&quot;M&quot;">
+                        <then>
+                            <output expression="&quot;Eres del grupo B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Eres del grupo A&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Inicial&lt;=&quot;N&quot;">
+                        <then>
+                            <output expression="&quot;Eres del grupo B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Eres del grupo A&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

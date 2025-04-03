@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Entradas"/>
+        <attribute name="authors" value="maggi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 12:47:03 a. m."/>
+        <attribute name="created" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDQtMDM7MTI6MDc6NTcgYS4gbS47MzA2Ng=="/>
+        <attribute name="edited" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDQtMDM7MTI6NDc6MDMgYS4gbS47MTszMTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cual es su edad?&quot;" newline="False"/>
+            <input variable="Edad"/>
+            <if expression="Edad&lt;4">
+                <then>
+                    <output expression="&quot;Tu entrada es gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad&lt;=18">
+                        <then>
+                            <output expression="&quot;Paga 200, por favor&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Tienes que pagar 500!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
