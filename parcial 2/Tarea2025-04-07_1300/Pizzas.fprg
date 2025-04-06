@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizzas"/>
+        <attribute name="authors" value="maggi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 11:47:22 a. m."/>
+        <attribute name="created" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDQtMDY7MTA6NDg6NTAgYS4gbS47MzA2NQ=="/>
+        <attribute name="edited" value="bWFnZ2k7TEFQVE9QLThEQ1NNSlNNOzIwMjUtMDQtMDY7MTE6NDc6MjIgYS4gbS47MTszMTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PVegetariana" type="String" array="False" size=""/>
+            <output expression="&quot;Quiere una pizza Vegetariana?&quot;" newline="True"/>
+            <input variable="PVegetariana"/>
+            <if expression="PVegetariana=&quot;si&quot;">
+                <then>
+                    <output expression="&quot;Muy bien, elija un solo ingrediente. &#191;Pimiento o tofu?&quot;" newline="True"/>
+                    <declare name="Ingrediente" type="String" array="False" size=""/>
+                    <declare name="Pimiento" type="String" array="False" size=""/>
+                    <declare name="Tofu" type="String" array="False" size=""/>
+                    <input variable="Ingrediente"/>
+                    <if expression="Ingrediente=&quot;tofu&quot;">
+                        <then>
+                            <output expression="&quot;En seguida se le preparar&#225; su pizza vegetariana con tomate, mozzarella y tofu&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;En seguida se le preparar&#225; su pizza vegetariana con tomate, mozzarella y pimiento&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Esta bien, tenemos otros ingredientes no vegetarianos. Elija solo uno &#191;Peperoni, Jam&#243;n o Salm&#243;n?&quot;" newline="True"/>
+                    <declare name="Ingrediente2" type="String" array="False" size=""/>
+                    <declare name="Peperoni" type="String" array="False" size=""/>
+                    <declare name="Jamon" type="String" array="False" size=""/>
+                    <declare name="Salmon" type="String" array="False" size=""/>
+                    <input variable="Ingrediente2"/>
+                    <if expression="Ingrediente2=&quot;peperoni&quot;">
+                        <then>
+                            <output expression="&quot;En seguida se le preparar&#225; su pizza no vegetariana con tomate, mozzarella y peperoni&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Ingrediente2=&quot;jamon&quot;">
+                                <then>
+                                    <output expression="&quot;En seguida se le preparar&#225; su pizza no vegetariana con tomate, mozzarella y jam&#243;n&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;En seguida se le preparar&#225; su pizza no vegetariana con tomate, mozzarella y salm&#243;n&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
